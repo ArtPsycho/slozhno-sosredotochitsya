@@ -2,6 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--background-color);
   background-image: var(--background-image);
   font-family: 'IBM Plex mono', monospace;
   background-position: center;
@@ -101,7 +102,7 @@
 }
 
 .header__paragraph {
-  max-width: 50%;
+  max-width: 491px;
   justify-self: end;
   align-self: center;
   font-size: var(--paragraph-size);
@@ -281,6 +282,10 @@
 @media screen and (max-width: 1023.9px) {
   .header {
     min-height: 1024px;
+  }
+
+  .header__paragraph {
+    max-width: 364px;
   }
 
   .section-horizontal {
